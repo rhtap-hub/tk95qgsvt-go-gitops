@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: tk95qgsvt-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: tk95qgsvt-go 
+  name: tk95qgsvt-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: tk95qgsvt-go 
